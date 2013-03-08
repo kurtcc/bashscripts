@@ -1,0 +1,11 @@
+#!/bin/bash
+# Makes tinyurl from link submitted and echo's the
+# newly formed tinyurl to stout.
+
+echo "Enter the url to shorten:"
+read url 
+tinyurl=$(curl http://tinyurl.com/api-create.php?url=$url) 
+echo $tinyurl
+
+# Turn off verbose output, can't find something in man page.
+

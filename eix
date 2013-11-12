@@ -1,0 +1,7 @@
+#!/usr/local/bin/bash
+# I just called this eix based on the script that lists packages with certain name in Gentoo.
+# This navigates to the directory of a given port 
+# eix irssi
+# make install clean
+cd `whereis -sq $1`
+exec bash
